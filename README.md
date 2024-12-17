@@ -1,23 +1,21 @@
 # Freelancer Web Site
 
-Express JS kullanılarak tasarlanmış bir websitesidir. Tek sayfa bir uygulama olmakla beraber, yönetici için gerekli alanları modal üzerinden tamamladık.
+It is a website designed using Express JS. Although it is a single page application, we have completed the necessary fields for the administrator via modal.
 
-Uygulamada portfolio bölümü dinamik ve diğer bölünler ise statik bir yapıya sahiptir.
+The portfolio section in the application is dynamic and the other sections have a static structure.
 
-Uygulama geliştirilikren hazır bir tema kullanılmıştır. Start Bootstrap - [Freelancer v7.0.6](https://startbootstrap.com/theme/freelancer).
+A ready theme was used for the application development. Start Bootstrap -
 
-![Portfolies](portfolies.png)
+## Installation
 
-## Kurulum
+You can fork the application or download the files to your computer. When you download the application to a folder on your computer.
 
-Uygulamayı forklayabilir veya dosyaları bilgisayarınıza indirebilirsiniz. Uygulamayı bilgisayarınızda bir klasöre indirdiğinizde.
+- Open the command line and go to the directory where your project is via the command line.
+- Prepare the application to start with the ```npm init``` command.
+- Fill in the **APP_MONGODB_DB_NAME=database_name**, **APP_MONGODB_FULL_URL=database_full_url** and **APP_SESSION_SECRET_KEY=** fields in the **.env** file.
+- Run your application with the ```node app``` command.
 
-- Komut satırını açın ve komut satırı üzerindenprojenizin olduğu dizine gidin.
-- ```npm init``` komutu ile uygulamayı başlamak için hazırlayın.
-- **.env** dosyasında **APP_MONGODB_DB_NAME=veri_tabani_adi**, **APP_MONGODB_FULL_URL=veritabani_tam_url** ve **APP_SESSION_SECRET_KEY=** alanlarını doldurun.
-- ```node app``` komutu ile uygulamanızı çalıştırın.
-
-Örnek **.env** dosyası şu şekilde olabilir.
+An example **.env** file can be like this.
 
 ```
 PORT=5000
@@ -26,15 +24,15 @@ APP_MONGODB_FULL_URL=mongodb://localhost:27017
 APP_SESSION_SECRET_KEY=EkdsOpaaufaaa222UfaaaUUP
 ```
 
-Burada veritabanı adını siz kendinize göre ayarlayabilirsiniz. MongoDB tam urlsini de, eğer şifre ve kullanıcı adı varsa onları da ekleyerek, eğer kendibilgisayarınızda bulunan bir test sunucunuz varsa  direk yukarıdaki şekilde kullanabilirsiniz.
+Here you can set the database name according to yourself. You can also add the full MongoDB URL, if there is a password and username, and if you have a test server on your own computer, you can use it directly as above.
 
-APP_SESSION_SECRET_KEY ise rastgele oluşturulmuş bir stringdir.
+APP_SESSION_SECRET_KEY is a randomly generated string.
 
-Tüm işlemleri doğru yaptıysanız ```node app``` komutundan sonra sunucunuz çalışmaya başlayacaktır. Artık ```http://localhost:5000``` adresinden websayfasına ulaşabilirsiniz. İlk kullanımda ```http://localhost:5000/login``` adresinden bir yönetici ayarlaması yapabilirsiniz. Sadece tek bir yönetici / kullanıcıya izin veriliyor. Sonrasında yine ```http://localhost:5000/login``` adresinden giriş yaparak **ADD** linkine tıklayarak portfolio bölümüne gerekli resim ve bilgileri girebilirsiniz. 
+If you did all the operations correctly, your server will start working after the ```node app``` command. Now you can access the web page from the address ```http://localhost:5000```. For the first use, you can set up an administrator from ```http://localhost:5000/login```. Only one administrator / user is allowed. Afterwards, you can log in from ```http://localhost:5000/login``` and enter the necessary images and information in the portfolio section by clicking on the **ADD** link.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-Uygulama Node JS temelli geliştirilmiştir. Kullanılan paketler aşağıda sıralanmaktadır.
+The application is developed based on Node JS. The packages used are listed below.
 
 - Express JS
 - Bootstrap
@@ -48,14 +46,4 @@ Uygulama Node JS temelli geliştirilmiştir. Kullanılan paketler aşağıda sı
 - dotenv
 - ejs
 
-## Ekran Görüntüleri
 
-Uygulama ile ilgili bazı ekran görüntüleri.
-
-![Home](home.png)
-
-![Portfolies](portfolies.png)
-
-![Portfolio](portfolies1.png)
-
-![Add Portfolio](add.png)
